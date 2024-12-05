@@ -1,19 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const app = document.getElementById('app');
+'use strict';
+
+document.addEventListener("DOMContentLoaded", function() {
+    const app = document.getElementById('app')
+    const head = document.getElementById('head')
 
     const button = document.createElement('button');
-    button.textContent = 'Generate a grid'
+    button.textContent = 'Start';
     button.setAttribute('class', 'button')
-    app.appendChild(button);
+    head.appendChild(button);
 
     button.addEventListener('click', () => {
-        function generateGrid(amount) {
-            for (let i = 0; i < amount; i++) {
-                const gridPiece = document.createElement('div');
-                gridPiece.classList.add('grid-piece');
-                
-            }
-        }
+        const sizeSelector = document.createElement('div')
+        sizeSelector.setAttribute('class', 'size-selector')
+
+
     })
 })
 
